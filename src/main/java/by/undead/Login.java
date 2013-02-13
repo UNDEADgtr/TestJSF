@@ -1,11 +1,17 @@
 package by.undead;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import java.io.Serializable;
+
 /**
  * User: Dzmitry
  * Date: 13.02.13
  * Time: 22:54
  */
-public class Login {
+@ManagedBean(name = "Login")
+@SessionScoped
+public class Login implements Serializable {
 
     private String login;
     private String password;
